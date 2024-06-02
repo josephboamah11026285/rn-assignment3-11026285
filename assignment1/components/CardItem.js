@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
 
-const CardItem = ({ title, description }) => {
+const CardItem = ({ title, description, imagelink }) => {
   return (
     <View style={styles.card}>
      
@@ -10,7 +10,7 @@ const CardItem = ({ title, description }) => {
         <Text style={styles.description}>{description}</Text>
        
       </View>
-      <Image source={{ uri: 'https://via.placeholder.com/100' }} style={styles.image} />
+      <Image source={imagelink} style={styles.image} />
     </View>
   );
 };
